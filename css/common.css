@@ -133,6 +133,19 @@ footer>p{
     ul>li>a{
         font-size: 2rem;
     }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:15vh;
+    }
+    footer>p{
+        line-height: 3rem;
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
 }
 
 /* @media all and (max-width:479px) {
