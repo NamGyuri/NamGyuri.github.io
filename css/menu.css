@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/* CSS style sheet */
+
+@media all and (max-width:479px) and (orientation: portrait) {
+    *{
+        margin:0;
+        padding:0;
+
+    }
+
+    a{
+        color:#1a1a1a;
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+        text-align: right;
+        padding-top:6vh;
+    }
+
+    header{
+        position:fixed;
+        width:100%;
+        height:10vh;
+        z-index: 9999;
+    }
+    header>h1{
+        font-size: 3.5rem;
+    }
+    #menu{
+        display: block;
+        width:100%;
+        font-size: 2rem;
+        margin:0 auto;
+    }
+    #menu>li>a{
+        font-size: 4rem;
+    }
+
+    input[id="icon"] {
+        position:absolute;
+        top:50%;
+        right: 5vw;
+        width: 10vw;
+        height: 10vw;
+        transform: translateY(-50%);
+        display:none;
+    } 
+
+    input[id="icon"] + label{
+        position: absolute;
+        top:50%;
+        right:5vw;
+        transform: translateY(-50%);
+        z-index: 10;
+        display:block;
+        width:10vw;
+        height:10vw;
+        cursor:pointer;  /* 커서를 올려놓을 때 모양이 바뀐다. */
+    } 
+
+    input[id="icon"] + label > span {
+        position: absolute;
+        display:block;
+        width:60%;
+        height:2px;
+        border-radius:2px;
+        background:#1a1a1a;
+        transition: all 0.6s;  /* 진행되는 과정들을 천천히 보여줄 수 있다. 0.35초 동안 진행됨 */
+        z-index:2;
+
+    }
+
+    input[id="icon"] + label > span:nth-child(1) {
+        top:30%;
+        right:20%;
+    }
+
+    input[id="icon"] + label > span:nth-child(2) {
+        width:40%;
+        top:50%;
+        right:20%;
+        transform: translateY(-50%);  /* 엘리먼트를 변형할 때 쓴다. 비틀거나 구부리거나 돌릴 때 . 여러가지로 모양을 바꿀 때 */
+    }
+
+    input[id="icon"] + label > span:nth-child(3) {
+        bottom:30%;
+        right:20%;
+    }
+
+
+    input[id="icon"]:checked + label > span:nth-child(1) {
+        top:50%;
+        transform:translateY(-50%) rotate(45deg);
+    }
+
+    input[id="icon"]:checked + label > span:nth-child(2) {
+        opacity: 0;
+    }
+
+    input[id="icon"]:checked + label > span:nth-child(3) {
+        bottom:50%;
+        transform:translateY(50%) rotate(-45deg);
+    }
+
+    #icon + label + #header {
+        position:fixed;  /* 스크롤을 내리더라도 같은 위치에서 붙어다닌다. */
+        width:55vw;
+        height:100%;
+        background:#fff;
+        top:0px;
+        padding:60px 25px 25px 25px;
+        box-sizing:border-box;
+        border-radius: 10vw 0 0 10vw;
+        right:-100vw;
+        z-index:1;
+        transition: all 0.6s;
+    }
+
+    #icon:checked + label + #header {
+        right:0px;
+        transition: all 0.6s;
+    }
+
+    #icon + label + #header + #pagecover{
+        display: none;
+        width:100vw;
+        height:1000vh;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    /* #icon:checked + label + #header + #pagecover{
+        display:block;
+        opacity: 100;
+    } */
+
+    #icon:checked + label + #header > ul > li > a {
+        color: #1a1a1a;
+    }
+}

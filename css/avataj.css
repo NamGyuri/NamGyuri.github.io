@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+.colorBox1{
+    background-color:#333333;
+}
+.colorBox2{
+    background-color:#FFFFFF;
+}
+.colorBox3{
+    background-color:#FFFAF5;
+}
+.colorBox4{
+    background-color:#FFDCB3;
+}
+.colorBox5{
+    background-color:#EF8F8F;
+}
+/* Design system color box */
+
+.uiimg{
+    background-image:url(../img/avataj/avataj-backimg.png);
+    background-repeat: no-repeat;
+    background-size:90vw;
+    background-position:top center;
+}
+/* background-img 전체 설정 */
+
+.uiimg img{
+    width:50vw;
+}
+/* uiimg 전체 설정 */
+
+.uiimg>.bg_img1{
+    padding-top:8vw;
+}
+.posi1{
+    top:39%;
+    left:27%;
+}
+/* 홈 설정 */
+
+.uiimg>.bg_img2{
+    padding-top:5vw;
+}
+.posi2{
+    top:25%;
+    left:49%;
+}
+/* 쇼핑 설정 */
+
+.uiimg>.bg_img3{
+    padding-top:15vw;
+}
+.posi3{
+    bottom:15%;
+    left:49%;
+}
+/* 지역 설정 */
+
+.uiimg>.bg_img4{
+    padding-top:20vw;
+}
+.posi4{
+    top:15%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+/* 마이페이지&캐릭터 설정 */
+
+.uiimg>.bg_img4{
+    padding-bottom:25vw;
+}
+
+@media all and (orientation: portrait) {
+    .banner{
+        width:100%;
+        height:80vh;
+        margin:13vh 0 5vh;
+        background-image: url(../img/avataj/avataj-column.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:center;
+    }
+    .banner>img{
+        display: none;
+    }
+
+    .uiimg{
+        background-size: contain;
+    }
+    .uiimg img{
+        width:65vw;
+    }
+
+    .uiimg>div>div>h5 {
+        margin-bottom: 1.5vw;
+    }
+
+    .uiimg>.bg_img1 {
+        padding-top: 0;
+        margin: 0 auto;
+    }
+    .uiimg>.bg_img2 {
+        padding-top: 9vw;
+        margin: 0 auto;
+    }
+    .uiimg>.bg_img3 {
+        padding-top: 5vw;
+        margin: 0 auto;
+    }
+    .uiimg>.bg_img4 {
+        padding-top: 25vw;
+        padding-bottom: 15vw;
+        margin: 0 auto;
+    }
+
+    .posi1{
+        top:28%;
+        left: 17%;
+    }
+    .posi3{
+        bottom: 14%;
+        left: 49%;
+    }
+    .posi4{
+        top: 12%;
+    }
+}
+
+@media all and (max-width:479px) {
+    .banner{
+        background-size: 90% auto;
+    }
+
+}

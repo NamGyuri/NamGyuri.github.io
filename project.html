@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/project.js"></script>
+    <script src="js/menu.js"></script>
+    <!-- <script src="/index.js"></script> -->
+    <!-- header 스크롤에 따라 fade & out -->
+    <link rel="stylesheet" href="Paperlogy/Paperlogy.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>NamGyuri Portfolio</title>
+</head>
+<body>
+    <!-- <header class="nav-down">
+        <h1>Nam Gyuri</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="project.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header> -->
+
+    <header>
+        <h1>Nam Gyuri</h1>
+        <input type="checkbox" id="icon">
+        <label for="icon" class="menu_btn">  <!--label은 인라인 스타일-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div id="header">
+            <ul id="menu">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="project.html">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div id="pagecover" class="cover"></div>
+    </header>
+    <section class="main">
+        <button id="left">
+            <a id="leftClose" style="display: block;">UI.UX<br>Design</a>
+            <span id="arrow-lf" class="arrow-ui"></span>
+            <!-- <img src="img/Right Arrow.png"> -->
+        </button>
+        
+        <section class="ui-small-img">
+            <button>
+                <img src="img/small_파킨슨.png" class="parkin">
+            </button>
+            <button>
+                <img src="img/small_prefer.png" class="prefer">
+            </button>
+            <button>
+                <img src="img/small_avataj.png" class="avata">
+            </button>
+            <button>
+                <img src="img/small_포럽.png" class="forlove">
+            </button>
+            <button>
+                <img src="img/small_허위신고.png" class="falsehood">
+            </button>
+        </section>
+
+        <div class="pf">
+            <div class="pftext">
+                <h1>PORT</h1>
+                <span class="windsong-regular">Design</span>
+                <h1>FOLIO</h1>
+            </div>
+            <img src="img/Portfolio_box.png">
+        </div>
+
+        <div class="project-img">
+            <img class="par" onclick="location.href='/Parkinson.html'" src="img/파킨슨.png">
+            <img class="pre" onclick="location.href='/prefer.html'" src="img/PREFER.png">
+            <img class="ava" onclick="location.href='/avataj.html'" src="img/AVATAJ.png">
+            <img class="fl" onclick="location.href='/forup.html'" src="img/포럽.png">
+            <img class="lie" onclick="location.href='/swatting.html'" src="img/허위신고.png">
+        </div>
+
+        <!-- 아래 web-project-img는 web design에 들어갈 project 입니다. web project를 추가할시 수정해야합니다. -->
+        <!-- 아래 web-project-img의 자식요소인 div는 div 대신 img 태그가 들어갈 자리입니다.-->
+        <!-- ** -->
+        <!-- <div class="web-project-img">
+            <div class="BasicFrame basic01">1</div>
+            <div class="BasicFrame basic02">2</div>
+            <div class="BasicFrame basic03">3</div>
+        </div> -->
+        <!-- ** -->
+        <!-- 위 web-project-img를 활성화 하려면 아래 <button id="right"> 주석을 해제하세요. -->
+        <!-- ** -->
+        <!-- <button id="right">
+            <span class="arrow-web"></span>
+            <a id="rightClose">Web<br>Design</a>
+        </button> -->
+        <!-- ** -->
+        <!-- web design을 추가하기 전이라 비활성화 해놓은 상태입니다. web design 추가시 활성화 해주세요. -->
+
+        <!-- <section class="web-small-img">
+            <button>
+                <div class="basic1">1</div>
+            </button>
+            <button>
+                <div class="basic2">2</div>
+            </button>
+            <button>
+                <div class="basic3">3</div>
+            </button>
+        </section> -->
+    </section>
+    <!-- 첫 PORTFOLIO 시작 화면 -->
+
+    <section class="ui_web_slide">
+        <div class="accordion">
+            <!-- <button id="ui_btn">
+                <span class="arrow-web"></span>
+            </button> -->
+            <div>
+                <div class="m_parkinson">
+                    <img src="img/파킨슨.png">
+                </div>
+                <div class="m_prefer">
+                    <img src="img/PREFER.png">
+                </div>
+                <div class="m_avataj">
+                    <img src="img/AVATAJ.png">
+                </div>
+                <div class="m_forup">
+                    <img src="img/포럽.png">
+                </div>
+                <div class="m_swatting">
+                    <img src="img/허위신고.png">
+                </div>
+            </div>
+            <!-- <button id="web_btn">
+                <span class="arrow-ui"></span>
+            </button> -->
+        </div>
+    </section>
+
+
+</body>
+</html>

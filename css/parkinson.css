@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+.color>div{
+    display: flex;
+    justify-content: space-between;
+    width: 32vw;
+}
+
+
+.colorBox1{
+    background-color:#333333;
+}
+.colorBox2{
+    background-color:#F7F7F7;
+}
+.colorBox3{
+    background-color:#FFFFFF;
+}
+.colorBox4{
+    background-color:#FFE16F;
+}
+/* DesignSystem Color Box 설정 */
+
+.bg_img1{
+    background-image:url(../img/parkinson/UI-Design-backimg1.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position: top center;
+}
+.posi1{
+    top:27.5%;
+    left:21.5%;
+}
+/* 홈화면 & 나의기분 설정 */
+
+.bg_img2{
+    background-image:url(../img/parkinson/UI-Design-backimg2.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position: center 25.5vw;
+}
+.posi2{
+    top:27%;
+    right:25.5%;
+}
+/* 표정검사 설정 */
+
+.bg_img3{
+    background-image:url(../img/parkinson/UI-Design-backimg3.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position: center 30vw;
+}
+.uiimg>.bg_img3{
+    margin-bottom: 15vw;
+}
+.posi3{
+    top:27%;
+    left:25%;
+    text-align: right;
+}
+/* 발성검사 설정 */
+
+.bg_img4{
+    background-image:url(../img/parkinson/UI-Design-backimg4.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position: center 17vw;
+}
+.posi4{
+    top:10%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+/* 약복용 & 수면관리 설정 */
+
+.bg_img5{
+    background-image:url(../img/parkinson/UI-Design-backimg5.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position:bottom center;
+}
+.uiimg>.bg_img5{
+    padding-bottom: 3vw;
+}
+.posi5{
+    top:34%;
+    left:21%;
+    text-align: right;
+}
+/* 운동 관리 설정 */
+/* UI Design background-img 설정 */
+
+
+@media all and (orientation: portrait) {
+    .banner{
+        width:100%;
+        height:80vh;
+        margin:13vh 0 5vh;
+        background-image: url(../img/parkinson/parkinson-column.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:center;
+    }
+    .banner>img{
+        display: none;
+    }
+
+    .color>div{
+        width:55vw;
+    }
+
+    .uiimg{
+        background-size: contain;
+    }
+    .uiimg>div{
+        padding:0;
+    }
+    .uiimg img{
+        width: 90vw;
+        padding-top:18vw;
+    }
+
+    .uiimg>div>div>h5 {
+        margin-bottom: 1.5vw;
+    }
+
+    .uiimg>.bg_img1 {
+        padding-top: 0;
+        margin: 0 auto;
+    }
+    .uiimg>.bg_img2 {
+        padding-top: 9vw;
+        margin: 0 auto;
+        background-position: center 43vw;
+    }
+    .uiimg>.bg_img3 {
+        padding-top: 5vw;
+        margin: 0 auto;
+        background-position: center 43vw;
+    }
+    .uiimg>.bg_img4 {
+        padding-top: 25vw;
+        padding-bottom: 15vw;
+        margin: 0 auto;
+        background-size: 110%;
+        background-position: center 48vw;
+    }
+
+    .posi1{
+        top: 24%;
+        left: 10%;
+    }
+    .posi2 {
+        top: 34%;
+        right: 13.5%;
+    }
+    .posi3 {
+        top: 31%;
+        left: 13%;
+    }
+    .posi4 {
+        top:26%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .posi5 {
+        top: 29%;
+        left: 8.5%;
+    }
+}
+
+@media all and (max-width:479px) {
+    .banner{
+        background-size: 90% auto;
+    }
+
+}

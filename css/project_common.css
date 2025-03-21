@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+strong{
+    font-family: 'font-B';
+}
+/* Design system typography bold weight 설정 */
+
+img{
+    width:100%;
+}
+/* img 전체 설정 */
+
+.Persona>div>img:first-child{
+    margin-bottom:3vw;
+}
+/* persona 사이 여백 설정 */
+
+.banner{
+    display: grid;
+    place-items: center;
+    width:100%;
+    height:90vh;
+    margin-top:10vh;
+}
+.banner>img{
+    width:85%;
+}
+/* banner 설정 */
+
+.p_common{
+    display: flex;
+    justify-content: space-between;
+    padding:20vw 15vw 0;
+}
+h2{
+    font-family: 'font-B';
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 5rem;
+}
+.p_common>div{
+    width:40vw;
+    flex-shrink: 0;
+}
+h5{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-bottom:1.2vw;
+}
+p{
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+.icon>img{
+    width:33vw;
+}
+.right>div{
+    margin-bottom: 6vw;
+}
+.right>div:last-child{
+    margin-bottom: 0;
+}
+/* PROJECT의 기본적인 디자인 */
+
+.ko{
+    margin-bottom:0.5vw;
+}
+.ko, .eg{
+    display: flex;
+    justify-content: space-between;
+    width:20vw;
+}
+/* DesignSystem의 typography 기본적인 디자인 */
+
+.color>div{
+    display: flex;
+    justify-content: space-between;
+}
+.cb{
+    width:7vw;
+    height:7vw;
+    border-radius:2vw;
+    margin-bottom:1vw;
+    box-shadow: 0.15vw 0.15vw 0.8vw 0 rgba(0, 0, 0, 0.2);
+}
+.color p{
+    text-align: center;
+}
+/* DesignSystem의 color 기본적인 디자인 */
+
+.UiDesign>h2{
+    padding:20vw 15vw 0;
+}
+.uiimg{
+    margin:5vw 0;
+}
+.uiimg img{
+    width:100%;
+    margin: 5vw auto;
+    display: block;
+
+}
+.uiimg>div{
+    position:relative;
+    width:100vw;
+    padding:13vw 15vw 1vw;
+    margin:5vw 0;
+}
+.uiimg>div:last-child{
+    margin-bottom:20vw;
+}
+.uiimg>div>div{
+    position:absolute;
+}
+.uiimg>div>div>h5{
+    margin-bottom:0.5vw;
+}
+/* UI Design의 기본적인 디자인 */
+
+@media all and (orientation: portrait) {
+    h2{
+        font-size: 4rem;
+    }
+    h5{
+        font-size:3rem;
+        margin-bottom:3vw;
+    }
+    p{
+        font-size: 2.3rem;
+        line-height: 3.5rem;
+    }
+    .right>div{
+        margin-bottom:8vw;
+    }
+
+    .p_common{
+        flex-direction: column;
+        padding: 20vw 12vw 0;
+    }
+    .p_common>div{
+        width: 100%;
+        padding:0 5vw;
+        margin-top:10vw;
+    }
+
+    .ko, .eg {
+        width:32vw;
+    }
+    .cb{
+        width:12vw;
+        height:12vw;
+        margin:0 auto 2vw;
+    }
+    .color>div>div{
+        text-align: center;
+    }
+    .icon>img{
+        width:45vw;
+    }
+
+    .Persona>div>img:first-child{
+        margin-bottom: 6vw;
+    }
+
+}

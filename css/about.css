@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+.about{
+    position:relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100vh;
+    padding-top:5vh;
+}
+section p, section>div>span{
+    font-size: 1.3rem;
+    line-height:2rem;
+}
+
+.about *{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.about>p:first-child{
+    text-align: right;
+}
+.about>div{
+    text-align: center;
+}
+.about>div>img{
+    width:20vw;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+}
+
+
+.skill{
+    height:100vh;
+    padding:0 18vw;
+}
+.r-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skill>h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom:70px;
+}
+
+
+.flex{
+    display: flex;
+    justify-content:space-between;
+}
+.flex h5{
+    font-size: 1.5rem;
+    margin-bottom:15px;
+}
+
+.skill_per{
+    text-align: center;
+    margin-top:60px;
+}
+.skill_per>h5{
+    font-size: 1.5rem;
+    text-align:left;
+    margin-bottom:20px;
+}
+.flex>img{
+    width:7vw;
+}
+
+
+.how{
+    position: relative;
+    display:flex;
+    justify-content:space-around;
+    padding:30vh 10vw;
+}
+.how>h1{
+    position:sticky;
+    top:15vh;
+    width:100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    font-size: 7rem;
+    line-height:8rem;
+}
+
+.how>div{
+    flex-grow: 1;
+    flex-basis: 0;
+    /* padding-left:42vw; */
+}
+.how>div>div{
+    padding:7vw 0;
+}
+.how>div>div:first-child{
+    padding:2vh 0;
+}
+.how h2{
+    font-size: 2rem;
+    margin-bottom:2vh;
+    font-family: 'font-B';
+}
+.how p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+@media all and (orientation: portrait) {
+    .about{
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        padding:10vh 0 5vh;
+    }
+    .about *{
+        flex-grow: 0;
+        text-align: center;
+    }
+    .about>div>img{
+        margin: 6vh 0;
+        width:40vw;
+    }
+    .about>p:first-child, .about>p {
+        text-align: center;
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+    /* about 부분 수정 */
+
+    .skill>h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 10vw;
+    }
+    .w-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .flex{
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .a_flex{
+        display:block;
+        height:60vw;
+    }
+    .a_flex>div{
+        margin-bottom: 4.5vw;
+    }
+    .a_flex>div>h5{
+        font-size: 2.5rem;
+        margin-bottom: 1.7vh;
+    }
+    .a_flex>div>p{
+        font-size: 2.1rem;
+        line-height: 3.7rem;
+    }
+
+    .skill_per{
+        margin: 0 0 0 5vw;
+        height:60vw;
+    }
+    .skill_per>h5{
+        font-size: 2.5rem;
+        margin-bottom: 1.7vh;
+    }
+    .skill_per>div>img{
+        width:10vw;
+    }
+
+    .sk_flex{
+        flex-wrap: wrap;
+        height:55vw;
+    }
+    .sk_flex>img{
+        margin:3vh 2vh 0 0;
+    }
+    .sk_flex>img:nth-child(1), .sk_flex>img:nth-child(5){
+        margin-top: 0;
+    }
+    .sk_flex>img:nth-child(5), .sk_flex>img:nth-child(6){
+        margin-right: 0;
+    }
+    /* skill 부분 수정 */
+
+    .how{
+        display:block;
+        padding: 20vw 15vw;
+    }
+    .how>h1{
+        font-size: 8rem;
+        line-height: 10rem;
+        position: static;
+        margin-bottom: 10vw;
+    }
+    .how>div>div>h2{
+        font-size: 3.5rem;
+        font-family: 'font-B';
+    }
+    .how>div>div>p{
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+}
+@media all and (max-width:479px){
+    .w-flex {
+        display:block;
+        text-align: center;
+    }
+    .a_flex{
+        height: auto;
+    }
+    .a_flex>div>h5{
+        font-size: 2.5rem;
+        margin-bottom: 1.2vh;
+    }
+    .a_flex>div{
+        margin-bottom: 6rem;
+    }
+    .skill_per {
+        margin:0;
+    }
+    .skill_per>h5{
+        text-align: center;
+    }
+    .sk_flex {
+        justify-content: space-around;
+        align-items: center;
+        width:40vw;
+        height: 50vw;
+        margin: 0 auto;
+    }
+    .skill_per>div>img {
+        width: 13vw;
+        margin: 0;
+    }
+}

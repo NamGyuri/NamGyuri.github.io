@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="Paperlogy/Paperlogy.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/project_common.css">
+    <link rel="stylesheet" href="css/avataj.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>NamGyuri Portfolio</title>
+</head>
+<body>
+    <!-- <header class="nav-down">
+        <h1>Nam Gyuri</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="project.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header> -->
+
+    <header>
+        <h1>Nam Gyuri</h1>
+        <input type="checkbox" id="icon">
+        <label for="icon">  <!--label은 인라인 스타일-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div id="header">
+            <ul id="menu">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="project.html">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div id="pagecover"></div>
+    </header>
+    <section class="banner">
+        <img src="img/avataj/avataj-banner.png">
+    </section>
+    
+    <section class="p_common ProjectOverview">
+        <h2>Project<br>Overview</h2>
+        <div class="right">
+            <div class="overview text_common">
+                <h5>Overview</h5>
+                <p>가상의 아바타를 사용하여 자신을 나타낼 수 있으며, 몸이 불편한 사람이 다른 사람들과 직접 상호 작용할 때 직면할 수 있는 선입견을 제거하고, 이를 통해 일반 사람들처럼 신체의 자유를 간접적으로 체험할 수 있는 메타버스 서비스</p>
+            </div>
+            <div class="period text_common">
+                <h5>Production period</h5>
+                <p>2023.03 - 2023 .09</p>
+            </div>
+            <div class="tool text_common">
+                <h5>Tool</h5>
+                <p>Figma, Blender, AI</p>
+            </div>
+            <div class="participation text_common">
+                <h5>Participation</h5>
+                <p>100%</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="p_common WhatProblem">
+        <h2>What<br>Problem</h2>
+        <div class="right">
+            <div class="point text_common">
+                <h5>Pain point</h5>
+                <p>신체가 불편한 사람들은 사교활동과 같은 오프라인 활동 및 여행에 대한 자유를 누리지 못하고 있습니다.</p>
+            </div>
+            <div class="solution text_common">
+                <h5>Solution</h5>
+                <p>가상 현실로 경험 뿐만 아니라 실제 물품이 배송 됩니다. 커뮤니케이션 기능을 통해 가상 현실에서 직접 만날 수 있으며, 가상현실에서 신체의 제약을 받지 않고 여행을 다닐 수 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="p_common DesignSystem">
+        <h2>Design<br>system</h2>
+        <div class="right">
+            <div class="typography">
+                <h5>Typography</h5>
+                <div>
+                    <div class="ko">
+                        <p class="typo_left">나눔고딕</p>
+                        <p class="typo_right">Regular, <strong>Bold</strong></p>
+                    </div>
+                    <div class="eg">
+                        <p class="typo_left">ROBOTO</p>
+                        <p class="typo_right">Regular, <strong>Bold</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="color">
+                <h5>Color</h5>
+                <div>
+                    <div>
+                        <div class="cb colorBox1"></div>
+                        <p>#333333</p>
+                    </div>
+                    <div>
+                        <div class="cb colorBox2"></div>
+                        <p>#FFFFFF</p>
+                    </div>
+                    <div>
+                        <div class="cb colorBox3"></div>
+                        <p>#FFFAF5</p>
+                    </div>
+                    <div>
+                        <div class="cb colorBox4"></div>
+                        <p>#FFDCB3</p>
+                    </div>
+                    <div>
+                        <div class="cb colorBox5"></div>
+                        <p>#EF8F8F</p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <h5>Icon</h5>
+                <img src="img/avataj/avataj-icon.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="p_common Persona">
+        <h2>Persona</h2>
+        <div>
+            <img src="img/avataj/avataj-persona1.png">
+            <img src="img/avataj/avataj-persona2.png">
+        </div>
+    </section>
+
+    <section class="p_common IA">
+        <h2>Information<br>Architecture</h2>
+        <div>
+            <img src="img/avataj/avataj-ia.png">
+        </div>
+    </section>
+
+    <section class="p_common Frowchart">
+        <h2>Flow Chart</h2>
+        <div>
+            <img src="img/avataj/avataj-flowchart.png">
+        </div>
+    </section>
+    
+    <section class="p_common Wireframe">
+        <h2>Wireframe</h2>
+        <div>
+            <img src="img/avataj/avataj-wireframe.png">
+        </div>
+    </section>
+
+    <section class="UiDesign">
+        <h2>UI Design</h2>
+        <div class="uiimg">
+            <div class="bg_img1">
+                <img src="img/avataj/avataj-img1.png">
+                <div class="posi1">
+                    <h5>홈</h5>
+                    <p>국내, 해외, 쇼핑 중 하나를<br>선택하여 원하는 가상현실에서<br>활동할 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="bg_img2">
+                <img src="img/avataj/avataj-img2.png">
+                <div class="posi2">
+                    <h5>쇼핑</h5>
+                    <p>원하는 쇼핑 장소를 선택하여 원하는 상품을<br>쇼핑하고 등록된 주소로 직접 배달받으세요!</p>
+                </div>
+            </div>
+            <div class="bg_img3">
+                <img src="img/avataj/avataj-img3.png">
+                <div class="posi3">
+                    <h5>지역</h5>
+                    <p>원하는 지역을 선택하여 인기장소 및 관광자소를<br>구경하고 가상현실에서 자신만의 캐릭터로<br>사람들과 소통하고 활동하세요!</p>
+                </div>
+            </div>
+            <div class="bg_img4">
+                <img src="img/avataj/avataj-img4.png">
+                <div class="posi4">
+                    <h5>마이페이지&캐릭터</h5>
+                    <p>가상현실 활동을 통해 포인트를 모으고<br>가상현실에서 사용할 캐릭터를 자신만의<br>개성으로 꾸며보세요!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+       <p>본 사이트는 포트폴리오 용도로 제작된 사이트입니다. 일부 콘텐츠의 저작권은 해당사에 있음을 밝힙니다.</p>
+       <p>Design&Publishing by Nam Gyu Ri</p>
+       <p>Copyright2022.NamGyuri All pictures cannot be copied without permission.</p>
+    </footer>
+</body>
+</html>

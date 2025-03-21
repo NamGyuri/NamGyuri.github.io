@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+.colorBox1{
+    background-color:#333333;
+}
+.colorBox2{
+    background-color:#F8FAFE;
+}
+.colorBox3{
+    background-color:#FFFFFF;
+}
+.colorBox4{
+    background-color:#00B992;
+}
+.colorBox5{
+    background-color:#FEE264;
+}
+/* Design system color box */
+
+.uiimg img{
+    width:50vw;
+}
+/* uiimg의 img 전체 크기 설정 */
+
+.uiimg>.bg_img1{
+    padding-top:20vw;
+}
+.bg_img1{
+    background-image:url(../img/forup/forup-backimg1.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position: top center;
+}
+.posi1{
+    top:20%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+/* 홈 설정 */
+
+.uiimg>.bg_img2{
+    padding-bottom:13vw;
+}
+.bg_img2{
+    background-image:url(../img/forup/forup-backimg2.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position:center;
+}
+.posi2{
+    top:10%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+/* 검사 설정 */
+
+.uiimg>.bg_img3{
+    padding-top:5vw;
+    padding-bottom:18vw;
+}
+.bg_img3{
+    background-image:url(../img/forup/forup-backimg3.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position: bottom center;
+}
+.posi3{
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+
+@media all and (orientation: portrait) {
+    .banner{
+        width:100%;
+        height:80vh;
+        margin:13vh 0 5vh;
+        background-image: url(../img/forup/forup-column.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:center;
+    }
+    .banner>img{
+        display: none;
+    }
+
+    .uiimg{
+        background-size: contain;
+    }
+    .uiimg img{
+        width:60vw;
+    }
+
+    .uiimg>div>div>h5 {
+        margin-bottom: 1.5vw;
+    }
+
+    .uiimg>.bg_img1 {
+        padding-top: 25vw;
+        margin: 0 auto;
+    }
+    .uiimg>.bg_img2 {
+        padding: 30vw 0;
+        margin: 0 auto;
+    }
+    .uiimg>.bg_img3 {
+        padding-top: 5vw;
+        margin: 0 auto;
+    }
+    .uiimg>.bg_img4 {
+        padding-top: 25vw;
+        padding-bottom: 15vw;
+        margin: 0 auto;
+    }
+    .posi2 {
+        top: 18%;
+    }
+    .posi3 {
+        top: -2.5%;
+    }
+}
+
+@media all and (max-width:479px) {
+    .banner{
+        background-size: 90% auto;
+    }
+
+}

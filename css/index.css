@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+section{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    height:100vh;
+    padding: 13vw 8vw 8vw;
+}
+/* section 바탕 설정 값 */
+section h1{
+    font-size:6rem;
+    font-family: 'font-B';
+}
+section h2{
+    font-size: 1.7rem;
+}
+section p{
+    font-size: 1.2rem;
+    line-height:2rem;
+}
+/* font 전체 사이즈 조정 */
+
+.ui, .home-img, .coding{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.ui{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ui>div>h1{
+    margin-bottom:10%;
+    line-height: 1;
+}
+.ui>div>h2{
+    margin-bottom:5%;
+    line-height: 1;
+}
+/* UI.UX text */
+.logo{
+    position:absolute;
+    bottom:8vw;
+    left:8vw;
+    display:flex;
+    justify-content: space-between;
+    width:7.5vw;
+}
+.logo>a>img{
+    width:3.5vw;
+}
+/* github, instagram */
+/* section 왼쪽 부분 */
+
+.home-img{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.line{
+    height:100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.main-img{
+    height:95%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.coding{
+    align-self: flex-end;
+}
+.coding>h1{
+    text-align:right;
+    margin-top:10%;
+    line-height: 1;
+}
+.coding>p{
+    text-align:right;
+}
+
+@media (orientation: portrait) {
+    section{
+        flex-direction: column;
+        padding: 20vw 10vw 10vw;
+    }
+    /* section 바탕 설정 값 */
+    section h1{
+        font-size:6rem;
+    }
+    section h2{
+        font-size: 3rem;
+    }
+    section p{
+        font-size: 2rem;
+        line-height:3rem;
+        font-weight: 400;
+    }
+    /* font 전체 사이즈 조정 */
+
+    .ui, .home-img, .coding{
+        flex-grow: 0;
+        flex-basis: 0;
+    }
+    .home-img{
+        flex-grow: 1;
+    }
+    .ui{
+        height:20vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .ui>div>h1{
+        margin-bottom:2vw;
+        line-height: 1;
+    }
+    .ui>div>h2{
+        margin-bottom:1vw;
+        line-height: 1;
+    }
+    .ui>div>p{
+        width:35vw;
+        word-break: normal;
+    }
+    /* UI.UX text */
+
+    .logo{
+        position:absolute;
+        bottom:10vw;
+        left:10vw;
+        display:flex;
+        justify-content: space-between;
+        width:15vw;
+    }
+    .logo>a>img{
+        width:7vw;
+    }
+    /* github, instagram */
+
+    .home-img{
+        position:relative;
+        height:100%;
+    }
+    .line{
+        height:100%;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+    .main-img{
+        height:95%;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+
+    .coding{
+        height:20vh;
+    }
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+
+    section{
+        padding: 15vh 10vw 10vh;
+    }
+    /* section 바탕 설정 값 */
+    section h1{
+        font-size:8rem;
+    }
+    section h2{
+        font-size: 4rem;
+    }
+    section p{
+        font-size: 3rem;
+        line-height:4rem;
+        font-weight: 400;
+    }
+    /* font 전체 사이즈 조정 */
+
+    .ui>div>h1{
+        margin-bottom:4.5vw;
+        line-height: 1;
+    }
+    .ui>div>h2{
+        margin-bottom:2.5vw;
+        line-height: 1;
+    }
+    .ui>div>p{
+        width:50vw;
+        word-break: normal;
+    }
+    /* UI.UX text */
+
+    .logo{
+        position:absolute;
+        bottom:10vh;
+        left:10vw;
+        display:flex;
+        justify-content: space-between;
+        width:20vw;
+    }
+    .logo>a>img{
+        width:9vw;
+    }
+    /* github, instagram */
+
+    .home-img{
+        position:relative;
+        height:50%;
+    }
+    .line{
+        height:90%;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+    .main-img{
+        height:85%;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+
+    .coding{
+        height:20vh;
+    }
+}

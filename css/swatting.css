@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+table{
+    width:32vw;
+    margin:0 auto;
+    font-size: 1.5rem;
+    padding:1vw 0 3vw;
+}
+table tr *{
+    padding:0.6vw;
+}
+th{
+    text-align: left;
+}
+td{
+    text-align: left;
+}
+
+.solution>p{
+    margin-bottom:2vw;
+}
+.female{
+    margin-top:3vw;
+}
+/* table 설정 */
+
+.typography .ko, .typography .eg{
+    width:29vw;
+}
+.typography span{
+    font-family: 'font-H';
+}
+/* Design system typography 설정 */
+
+.colorBox1{
+    background-color:#354054;
+}
+.colorBox2{
+    background-color:#F8F8F8;
+}
+.colorBox3{
+    background-color:#FFFFFF;
+}
+.colorBox4{
+    background-color:#19D6EA;
+}
+.colorBox5{
+    background-color:#FF5959;
+}
+/* Design system color box */
+
+.Culturalprobes p{
+    margin-bottom:2vw;
+    padding-top:0.5vw;
+}
+/* Cultural Probes 설정 */
+
+.uiimg img{
+    width:40vw;
+}
+/* uiimg의 img 전체 크기 설정 */
+
+.uiimg>.bg_img1{
+    padding-top:5.5vw;
+}
+.bg_img1{
+    background-image:url(../img/swatting/swatting-backimg1.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position: top center;
+}
+.posi1{
+    bottom:9.5%;
+    left:19%;
+    text-align: right;
+}
+.posi1>p>br:nth-child(1), .posi1>p>br:nth-child(3){
+    display: none;
+}
+/* 음성 분석 설정 */
+
+.uiimg>.bg_img2{
+    padding-top:10vw;
+    padding-bottom:17vw;
+}
+.bg_img2{
+    background-image:url(../img/swatting/swatting-backimg2.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position:bottom center;
+}
+.posi2{
+    top:17%;
+    right:24%;
+    text-align: left;
+}
+.posi2_1{
+    bottom:29%;
+    left:23%;
+    text-align: right;
+}
+/* 허위신고 경고 설정 */
+
+@media all and (orientation: portrait) {
+    .banner{
+        width:100%;
+        height:80vh;
+        margin:13vh 0 5vh;
+        background-image: url(../img/swatting/swatting-column.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:center;
+    }
+    .banner>img{
+        display: none;
+    }
+
+    .Culturalprobes p {
+        margin-bottom: 3vw;
+        padding-top: 0.5vw;
+    }
+
+    .uiimg{
+        background-size: contain;
+    }
+    .uiimg img{
+        width:55vw;
+    }
+
+    .uiimg>div>div>h5 {
+        margin-bottom: 1.5vw;
+    }
+
+    .posi1 {
+        bottom: 6%;
+        left: 10%;
+        text-align: right;
+    }
+    .posi1>p>br:nth-child(1), .posi1>p>br:nth-child(3){
+        display:block;
+    }
+    .posi1>p>br:nth-child(2), .posi1>p>br:nth-child(4){
+        display:none;
+    }
+
+    .posi2 {
+        top: 14%;
+        right: 10%;
+    }
+    .posi2_1 {
+        bottom: 24%;
+        left: 10%;
+        text-align: right;
+    }
+
+}
+
+@media all and (max-width:479px) {
+    .banner{
+        background-size: 90% auto;
+    }
+
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="Paperlogy/Paperlogy.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/project_common.css">
+    <link rel="stylesheet" href="css/parkinson.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>NamGyuri Portfolio</title>
+</head>
+<body>
+    <!-- <header class="nav-down">
+        <h1>Nam Gyuri</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="project.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header> -->
+
+    <header>
+        <h1>Nam Gyuri</h1>
+        <input type="checkbox" id="icon">
+        <label for="icon">  <!--label은 인라인 스타일-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div id="header">
+            <ul id="menu">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="project.html">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div id="pagecover"></div>
+    </header>
+    <section class="banner">
+        <img src="img/parkinson/parkinson-banner.png">
+    </section>
+    
+    <section class="p_common ProjectOverview">
+        <h2>Project<br>Overview</h2>
+        <div class="right">
+            <div class="overview text_common">
+                <h5>Overview</h5>
+                <p>파킨슨 환자가 직접 자신의 건강 상태를 체크하고 스스로 훈련하도록 도우면서, 파킨슨 병에 대한 정보와 건강관리를 위한 다양한 기능을 제공합니다.</p>
+            </div>
+            <div class="period text_common">
+                <h5>Production period</h5>
+                <p>2022.07 - 2022 .12</p>
+            </div>
+            <div class="tool text_common">
+                <h5>Tool</h5>
+                <p>Figma, AI</p>
+            </div>
+            <div class="participation text_common">
+                <h5>Participation</h5>
+                <p>100%</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="p_common WhatProblem">
+        <h2>What<br>Problem</h2>
+        <div class="right">
+            <div class="point text_common">
+                <h5>Pain point</h5>
+                <p>2004년에 비해 2020년 파킨슨 환자 수가 3.2배 증가하였고, 발병 연령이 점차 낮아지며 젊은 파킨슨 환자가 증가했습니다. 현재 파킨슨과 관련된 다양한 앱이 출시되었으나 운동의 효과성과 몰입도를 높이기 위한 모션센싱 기술과 병의 진행을 모니터링 할 수 있는 기술이 없습니다.</p>
+            </div>
+            <div class="solution text_common">
+                <h5>Solution</h5>
+                <p>관리를 위한 적합한 운동 방법을 제공하고, 개인의 흥미와 동기를 주는 서비스와, 모션센싱 기술을 통해 병의 진행과정을 확인할 수 있도록 제공합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="p_common DesignSystem">
+        <h2>Design<br>system</h2>
+        <div class="right">
+            <div class="typography">
+                <h5>Typography</h5>
+                <div>
+                    <div class="ko">
+                        <p class="typo_left">나눔고딕</p>
+                        <p class="typo_right">Regular, <strong>Bold</strong></p>
+                    </div>
+                    <div class="eg">
+                        <p class="typo_left">ROBOTO</p>
+                        <p class="typo_right">Regular, <strong>Bold</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="color">
+                <h5>Color</h5>
+                <div>
+                    <div>
+                        <div class="cb colorBox1"></div>
+                        <p>#333333</p>
+                    </div>
+                    <div>
+                        <div class="cb colorBox2"></div>
+                        <p>#F7F7F7</p>
+                    </div>
+                    <div>
+                        <div class="cb colorBox3"></div>
+                        <p>#FFFFFF</p>
+                    </div>
+                    <div>
+                        <div class="cb colorBox4"></div>
+                        <p>#FFE16F</p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <h5>Icon</h5>
+                <img src="img/parkinson/parkinson-icon.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="UiDesign">
+        <h2>UI Design</h2>
+        <div class="uiimg">
+            <div class="bg_img1">
+                <img src="img/parkinson/parkinson-img-1.png">
+                <div class="posi1">
+                    <h5>홈화면 & 나의기분</h5>
+                    <p>자신의 기분에 해당하는<br>이모티콘을 선택하고<br>건강 일기를 작성하세요.</p>
+                </div>
+            </div>
+            <div class="bg_img2">
+                <img src="img/parkinson/parkinson-img-2.png">
+                <div class="posi2">
+                    <h5>표정검사</h5>
+                    <p>표정검사를 통해 병의 진행 상태를<br>확인하고 필요한 표정 운동을 통해<br>병의 진행을 늦추세요.</p>
+                </div>
+            </div>
+            <div class="bg_img3">
+                <img src="img/parkinson/parkinson-img-3.png">
+                <div class="posi3">
+                    <h5>발성검사</h5>
+                    <p>발성검사를 통해 병의 진행 상태를<br>확인하고 필요한 발성 운동을 통해<br>병의 진행을 늦추세요.</p>
+                </div>
+            </div>
+            <div class="bg_img4">
+                <img src="img/parkinson/parkinson-img-4.png">
+                <div class="posi4">
+                    <h5>약복용 & 수면관리</h5>
+                    <p>필요한 약을 기록하고 관리하세요!<br>수면을 기록하여 건강 상태를 확인하세요!</p>
+                </div>
+            </div>
+            <div class="bg_img5">
+                <img src="img/parkinson/parkinson-img-5.png">
+                <div class="posi5">
+                    <h5>운동 관리</h5>
+                    <p>운동을 기록하고 관리하세요.<br>필요한 운동을 추천 받으세요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+       <p>본 사이트는 포트폴리오 용도로 제작된 사이트입니다. 일부 콘텐츠의 저작권은 해당사에 있음을 밝힙니다.</p>
+       <p>Design&Publishing by Nam Gyu Ri</p>
+       <p>Copyright2022.NamGyuri All pictures cannot be copied without permission.</p>
+    </footer>
+</body>
+</html>

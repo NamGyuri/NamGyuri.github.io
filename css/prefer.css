@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+.typography .ko, .typography .eg{
+    width:24vw;
+}
+/* typography 한글, 영어 설정 */
+
+.colorBox1{
+    background-color:#333333;
+}
+.colorBox2{
+    background-color:#FAFAFA;
+}
+.colorBox3{
+    background-color:#FFFFFF;
+}
+.colorBox4{
+    background-color:#35BBF4;
+}
+.colorBox5{
+    background-color:#9B66F2;
+}
+/* Design system color box */
+
+.uiimg img{
+    width:50vw;
+}
+.uiimg>.bg_img1{
+    padding-top:22vw;
+}
+.bg_img1{
+    background-image:url(../img/prefer/prefer-backimg1.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position: top center;
+}
+.posi1{
+    top:20%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+/* 이종/인공장기 설정 */
+
+.uiimg>.bg_img2{
+    padding-top:20vw;
+    padding-bottom:20vw;
+}
+.bg_img2{
+    background-image:url(../img/prefer/prefer-backimg2.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position:center;
+}
+.posi2{
+    top:14%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+/* 사용자 생활분석 설정 */
+
+.uiimg>.bg_img3{
+    padding-top:1vw;
+}
+.posi3{
+    top:-5%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+
+
+.uiimg>.bg_img4{
+    padding-top:20vw;
+    padding-bottom:20vw;
+}
+
+.bg_img4{
+    background-image:url(../img/prefer/prefer-backimg3.png);
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position: bottom center;
+}
+.posi4{
+    top:14%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+/* ui design background img 설정 */
+
+
+@media all and (orientation: portrait) {
+    .banner{
+        width:100%;
+        height:80vh;
+        margin:13vh 0 5vh;
+        background-image: url(../img/prefer/prefer-column.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:center;
+    }
+    .banner>img{
+        display: none;
+    }
+
+    .typography .ko, .typography .eg {
+        width: 36vw;
+    }
+
+    .uiimg{
+        background-size: contain;
+    }
+    .uiimg img{
+        width:60vw;
+    }
+
+    .uiimg>div>div>h5 {
+        margin-bottom: 1.5vw;
+    }
+
+    .uiimg>.bg_img1 {
+        padding-top: 25vw;
+        margin: 0 auto;
+    }
+    .uiimg>.bg_img2 {
+        padding: 30vw 0;
+        margin: 0 auto;
+    }
+    .uiimg>.bg_img3 {
+        padding-top: 5vw;
+        margin: 0 auto;
+    }
+    .uiimg>.bg_img4 {
+        padding-top: 25vw;
+        padding-bottom: 15vw;
+        margin: 0 auto;
+    }
+
+    .posi1{
+        top: 17%;
+    }
+    .posi2{
+        top: 15.5%;
+    }
+}
+
+@media all and (max-width:479px) {
+    .banner{
+        background-size: 90% auto;
+    }
+
+}

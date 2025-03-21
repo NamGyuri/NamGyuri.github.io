@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="Paperlogy/Paperlogy.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/project_common.css">
+    <link rel="stylesheet" href="css/swatting.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>NamGyuri Portfolio</title>
+</head>
+<body>
+    <!-- <header class="nav-down">
+        <h1>Nam Gyuri</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="project.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header> -->
+
+    <header>
+        <h1>Nam Gyuri</h1>
+        <input type="checkbox" id="icon">
+        <label for="icon">  <!--label은 인라인 스타일-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div id="header">
+            <ul id="menu">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="project.html">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div id="pagecover"></div>
+    </header>
+    <section class="banner">
+        <img src="img/swatting/swatting-banner.png">
+    </section>
+    
+    <section class="p_common ProjectOverview">
+        <h2>Project<br>Overview</h2>
+        <div class="right">
+            <div class="overview text_common">
+                <h5>Overview</h5>
+                <p>팀프로젝트로 제작한 허위신고 문제 해결 서비스 통화 음성을 분석하여 신고자가 허위신고를 하고 있는 구분하는 서비스</p>
+            </div>
+            <div class="period text_common">
+                <h5>Production period</h5>
+                <p>2022.11 - 2022 .12</p>
+            </div>
+            <div class="tool text_common">
+                <h5>Tool</h5>
+                <p>Figma, AI</p>
+            </div>
+            <div class="participation text_common">
+                <h5>Participation</h5>
+                <p>60%</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="p_common WhatProblem">
+        <h2>What<br>Problem</h2>
+        <div class="right">
+            <div class="point text_common">
+                <h5>Pain point</h5>
+                <p>2022년 119 허위신고 출동 현황의 985건 중 허위신고 과태료 부과(대응건수) 현황은 0건입니다. 또한 2022년 112 허위신고 현황 4235건 중 처벌받은 경우는 2956건으로 전체의 60%~70% 수준입니다.</p>
+            </div>
+            <div class="solution text_common">
+                <h5>Solution</h5>
+                <p>※ 허위신고 음성 분석 방법</p>
+                <p>※ 남성</p>
+                <div class="male_plain_table">
+                    <img src="img/swatting/swatting-male-plain.png">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>허위신고</th>
+                            <th>실제신고</th>
+                        </tr>
+                        <tr>
+                            <th>음 높이</th>
+                            <td>179.36 [Hz]</td>
+                            <td>235.91 [Hz]</td>
+                        </tr>
+                        <tr>
+                            <th>초당 음절 수</th>
+                            <td>47.71 [SPS]</td>
+                            <td>53.56 [SPS]</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="male_urgent_table">
+                    <img src="img/swatting/swatting-male-urgent.png">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>허위신고</th>
+                            <th>실제신고</th>
+                        </tr>
+                        <tr>
+                            <th>음 높이</th>
+                            <td>179.49 [Hz]</td>
+                            <td>230.98 [Hz]</td>
+                        </tr>
+                        <tr>
+                            <th>초당 음절 수</th>
+                            <td>47.1 [SPS]</td>
+                            <td>64.86 [SPS]</td>
+                        </tr>
+                    </table>
+                </div>
+                <p class="female">※ 여성</p>
+                <div class="female_plain_table">
+                    <img src="img/swatting/swatting-female-plain.png">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>허위신고</th>
+                            <th>실제신고</th>
+                        </tr>
+                        <tr>
+                            <th>음 높이</th>
+                            <td>235.09 [Hz]</td>
+                            <td>318.01 [Hz]</td>
+                        </tr>
+                        <tr>
+                            <th>초당 음절 수</th>
+                            <td>39.00 [SPS]</td>
+                            <td>62.25 [SPS]</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="female_urgent_table">
+                    <img src="img/swatting/swatting-female-urgent.png">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>허위신고</th>
+                            <th>실제신고</th>
+                        </tr>
+                        <tr>
+                            <th>음 높이</th>
+                            <td>246.33 [Hz]</td>
+                            <td>306.76 [Hz]</td>
+                        </tr>
+                        <tr>
+                            <th>초당 음절 수</th>
+                            <td>32.35 [SPS]</td>
+                            <td>72.00 [SPS]</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>남성과 여성의 음성 분석 결과 허위신고와 실제신고에서 음높이와 초당 음절 수에 차이가 나타나는 것을 확인 할 수 있습니다.</p>
+                <p>통화 중 음성 분석을 통하여 허위신고를 구별할 수 있습니다. 분석을 바탕으로 현장을 파악하기 위한 수색 시간을 단축 시킵니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="p_common DesignSystem">
+        <h2>Design<br>system</h2>
+        <div class="right">
+            <div class="typography">
+                <h5>Typography</h5>
+                <div>
+                    <div class="ko">
+                        <p class="typo_left">나눔스퀘어</p>
+                        <p class="typo_right">Regular,<strong> Bold,</strong><span> ExtraBold</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="color">
+                <h5>Color</h5>
+                <div>
+                    <div>
+                        <div class="cb colorBox1"></div>
+                        <p>#354054</p>
+                    </div>
+                    <div>
+                        <div class="cb colorBox2"></div>
+                        <p>#F8F8F8</p>
+                    </div>
+                    <div>
+                        <div class="cb colorBox3"></div>
+                        <p>#FFFFFF</p>
+                    </div>
+                    <div>
+                        <div class="cb colorBox4"></div>
+                        <p>#19D6EA</p>
+                    </div>
+                    <div>
+                        <div class="cb colorBox5"></div>
+                        <p>#FF5959</p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <h5>Icon</h5>
+                <img src="img/swatting/swatting-icon.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="p_common Culturalprobes">
+        <h2>Cultural<br>Probes</h2>
+        <div>
+            <p>Contextual Inquiry를 바탕으로 제작한 Cultural Probes 경찰관과 소방관들을 대상으로 Cultural Probes 진행</p>
+            <img src="img/swatting/swatting-culturalprobes.png">
+        </div>
+    </section>
+
+    <section class="UiDesign">
+        <h2>UI Design</h2>
+        <div class="uiimg">
+            <div class="bg_img1">
+                <img src="img/swatting/swatting-img1.png">
+                <div class="posi1">
+                    <h5>음성 분석</h5>
+                    <p>통화 중의 음성을 분석하여 음높이,<br> 초당 음절 수가<br>특정 수치 이하일 경우<br> 허위신고 확률이<br>몇퍼센트인지 알려줍니다.</p>
+                </div>
+            </div>
+            <div class="bg_img2">
+                <img src="img/swatting/swatting-img2.png">
+                <div class="posi2">
+                    <h5>허위신고 경고</h5>
+                    <p>경찰 및 소방관이 해당 연락처의<br>허위신고 현황을 확인 할 수 있으며,<br>허위신고에 대한 경고를 보낼 수 있습니다.</p>
+                </div>
+                <div class="posi2_1">
+                    <p>신고 간편화에 따른 허위신고를 방지하고자<br>긴급전화 화면에 허위신고 과태료에 대한<br>경고문을 추가하였습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+       <p>본 사이트는 포트폴리오 용도로 제작된 사이트입니다. 일부 콘텐츠의 저작권은 해당사에 있음을 밝힙니다.</p>
+       <p>Design&Publishing by Nam Gyu Ri</p>
+       <p>Copyright2022.NamGyuri All pictures cannot be copied without permission.</p>
+    </footer>
+</body>
+</html>
