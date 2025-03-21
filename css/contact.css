@@ -173,6 +173,8 @@ input:focus{
 @media all and (max-width:479px) {
     section {
         flex-direction: column;
+        height: 100%;
+        padding-top: 20vh;
     }
     section>div {
         justify-content: center;

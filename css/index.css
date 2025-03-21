@@ -4,8 +4,7 @@ section{
     position:relative;
     display: flex;
     justify-content: space-between;
-    height:90vh;
-    margin-top:10vh;
+    height:100vh;
     padding: 13vw 8vw 8vw;
 }
 /* section 바탕 설정 값 */
@@ -174,7 +173,9 @@ section p{
 @media all and (max-width:479px) {
 
     section{
-        padding: 5vh 10vw 10vh;
+        height:80vh;
+        margin-top:10vh;
+        padding: 5vh 8vw 0vh;
     }
     /* section 바탕 설정 값 */
     section h1{
@@ -206,7 +207,7 @@ section p{
 
     .logo{
         position:absolute;
-        bottom:10vh;
+        bottom:0vh;
         left:10vw;
         display:flex;
         justify-content: space-between;
